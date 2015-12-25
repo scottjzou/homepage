@@ -1,0 +1,15 @@
+body {
+	background-color:  #000;
+	color: #fff;
+	text-align: center;
+}
+
+header { 
+	height: 100vh;
+}
+
+header .title {
+	background: url("../img/ScottZou_Big.png") center center no-repeat;
+	background-size:70%;
+	height: 100vh;
+}
