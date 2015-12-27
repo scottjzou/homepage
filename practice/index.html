@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+
+    <!--- Basics -->
+    <meta charset="utf-8">
+	<title>Practices</title>
+	<meta name="description" content="Scott Zou's Practices">
+	<meta name="author" content="Jiahang Scott Zou">
+
+    <!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <!-- Favicons -->
+	<link rel="shortcut icon" href="../img/favicons/SZ_Bright_sm.png" >
+
+</head>
+
+<body>
+    <header>
+
+        <div class="row">
+                      <img src="../img/the_Experiment.png" alt="the Experiment">
+                <canvas id="myCanvas" width="360" height="240">
+                    <p>No canvas support? Have an old-fashioned image »
+                    instead:</p>
+                    <img src="../img/the_Experiment.png" alt="the Experiment">
+                </canvas>
+                <script type="text/javascript">
+
+                    var canvas=document.getElementById('myCanvas');
+                    var ctx=canvas.getContext('2d');
+                    ctx.fillStyle='#00F';
+                    ctx.fillRect(0,0,80,100);
+
+                </script>
+        </div>
+
+    </header>
+    <footer>
+        
+    </footer>
+   
+
+
+    <!-- Scripts -->
+    <script src="../js/jquery-1.10.2.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/init.js"></script>
+</body>
+
+</html>
