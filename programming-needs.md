@@ -1,4 +1,4 @@
-Programming Needs and Installations
+Programming Needs
 ===============
 ##Table of Content
 
@@ -23,7 +23,9 @@ import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc5
 * Add alias to enable `subl your_file`
 
 #### Bash
-All should be put into *.bash_profile*
+All should be put into *.bash_profile*  
+
+Use `vi ~/.bash_profile` to edit the file.
 
 * [Editing bash shell prompt (PS1)](http://www.cyberciti.biz/tips/howto-linux-unix-bash-shell-setup-prompt.html)
 `export PS1='\n[\u \W]'`
@@ -47,11 +49,26 @@ brew install package_name
 
 #### Pyenv
 
+The Python specific virtualenv, recommending using Anaconda
+
+* Installation 
+```
+brew install pyenv
+brew install pyenv-virtualenv
+brew install pyenv-pip-migrate
+```
 * Put these in .bash_profile
 ```bash
 	eval "$(pyenv init -)"
 	eval "$(pyenv virtualenv-init -)"
 ```
+* Usage
+```
+pyenv install 3.5.0 (installing this python version)
+pyenv virtualenv 3.5.0 your_environment (installing this virtual environment using this python version)
+pyenv local your_environment (set this folder to use this virtualenv, so everytime enter this folder will begin run python in this environment)
+```
+
 
 #### ANACONDA
 
