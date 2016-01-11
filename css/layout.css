@@ -6,9 +6,23 @@ header#homepage {
 	background-color: #000;
 }
 
-
 header .title {
+	margin-top: 50px;
 	color: #fff;
 	background: url("../img/ScottZou_Big.png") center center no-repeat;
 	background-size:70%;
+}
+
+
+.navbar-toggle {
+	background-color: #0468EC;
+}
+
+.icon-bar {
+	background-color: white;
+}
+
+.navbar-nav {
+	display: inline-block;
+    float: none;
 }

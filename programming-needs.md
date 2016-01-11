@@ -1,35 +1,54 @@
 Programming Needs for Mac Users
 ===============
-##Intro
+
+
+
+## Intro
    
-This is a summary of tools you need to do programming on OSX, and also a summary of the skill sets and tutorials that I, Jiahang Scott Zou, have been learning or will be learning.   
+This is a summary of tools you need to do programming on OSX, and also a summary of the skill sets and tutorials that I, Jiahang Scott Zou, have been learning or will be learning.
 
 This guide consists of basic installations and usages of those recommended tools, as well as many resources and guides for some programming knowledges.
   
 This is only for educational purposes. The table of content is shown below, enjoy.
 
 
-##Table of Contents
+## Table of Contents
 
-* Programming Tools
-	* [Sublime Text](#sublime-text)
-	* [Bash](#bash)
-	* [Brew](#brew)
-	* [Git](#git)
-	* [Pyenv](#pyenv)
-	* [Anaconda](#anaconda)
-	* [Markdown](#markdown)
-* Web Development
-	* [Django](#django)
-	* [Bootstrap](#bootstrap)
-	* [Font Awesome](#font-awesome)
-	* [The Noun Project](#the-noun-project)
-* [Other useful Apps](#sketch)
-* Specific Tools
-	* [Visualgo](#visualgo)
-	* [Python Packaging](#python-packaging)
-* Common Error Fixes
-	* [Python Encoding](#python-encoding)
+
+<!-- MarkdownTOC -->
+
+- [Basic Tools](#basic-tools)
+	- [Sublime Text](#sublime-text)
+	- [Bash](#bash)
+	- [Brew](#brew)
+	- [Git](#git)
+	- [Pyenv](#pyenv)
+	- [ANACONDA](#anaconda)
+	- [Markdown](#markdown)
+- [Web Development](#web-development)
+	- [Django](#django)
+	- [Bootstrap](#bootstrap)
+	- [Font Awesome](#font-awesome)
+	- [The Noun Project](#the-noun-project)
+	- [Three.js](#threejs)
+	- [Ladon](#ladon)
+- [Other Installations](#other-installations)
+	- [jruby and Maven(mvn)](#jruby-and-mavenmvn)
+	- [Sketch](#sketch)
+- [Specific Tools](#specific-tools)
+	- [thefuck](#thefuck)
+	- [Python Tutor](#python-tutor)
+	- [visualgo](#visualgo)
+	- [Python Packaging](#python-packaging)
+	- [Online Python IDEs](#online-python-ides)
+- [Common Errors & Fixes](#common-errors--fixes)
+	- [How to install with setup.py](#how-to-install-with-setuppy)
+	- [Python Encoding](#python-encoding)
+	- [Django RuntimeError: maximum recursion depth exceeded](#django-runtimeerror-maximum-recursion-depth-exceeded)
+	- [GIT LARGE FILE in Commits](#git-large-file-in-commits)
+
+<!-- /MarkdownTOC -->
+
 	
 	
 ### Basic Tools
@@ -96,10 +115,12 @@ pyenv virtualenv 3.5.0 your_environment (installing this virtual environment usi
 pyenv local your_environment (set this folder to use this virtualenv, so everytime enter this folder will begin run python in this environment)
 ```
 
+
 #### ANACONDA
 
 * [Download](https://www.continuum.io/downloads) 
 * [Quick Start](http://conda.pydata.org/docs/test-drive.html)
+
 
 #### Markdown
 
@@ -113,6 +134,12 @@ pyenv local your_environment (set this folder to use this virtualenv, so everyti
 #### Django
 * Download (using pip)
 * [Documentation](https://docs.djangoproject.com/en/1.9/)
+##### Django Rest Framework
+* ```pip install django-rest-framework```
+* <http://www.django-rest-framework.org/>
+* A Documentation tool that uses YAML to help: Django Rest Swagger
+```pip install django-rest-swagger```
+
 
 #### Bootstrap
 * [Getting Started](http://getbootstrap.com/getting-started/)
@@ -130,11 +157,25 @@ pyenv local your_environment (set this folder to use this virtualenv, so everyti
 #### Three.js
 * [Guide(Chinese)](http://www.hewebgl.com/article/articledir/1)
 
+#### Ladon
+A web-service building tool with python/php
+
+* <http://pythonhosted.org/ladon/>
+* also [django-ladon](https://github.com/TargetHolding/django-ladon).
+
+### Other Installations
+
+#### jruby and Maven(mvn)
+* [Install](http://jruby.org/getting-started)
+* Some notice:
+	* brew provides version 9.0, while the newest package is 1.7.23 in my case. So I had to download it with a zip file.
+	* To build the zip file, it requires [Maven](https://maven.apache.org/), which can be installed by Brew. Then build by typing `mvn`.
+
 #### Sketch
 * [Tutorials](http://leveluptuts.com/tutorials/sketch-3-tutorials)
 
 
-###Specific Tools
+### Specific Tools
 
 #### thefuck
 An auto-correcting tool
@@ -143,6 +184,9 @@ Installation:
 ```
 wget -O - https://raw.githubusercontent.com/nvbn/thefuck/master/install.sh | sh - && $0
 ```
+#### Python Tutor
+Environmental Diagram Yeah! 
+<http://www.pythontutor.com/visualize.html#mode=edit>
 
 #### visualgo
 A [Site](http://visualgo.net/) that visualising data structures and algorithms through animation
@@ -154,7 +198,19 @@ Guides:
 
 <http://python-packaging-user-guide.readthedocs.org/en/latest/distributing/>
 
-### Common Errors
+
+
+
+
+#### Online Python IDEs
+comparisons: <http://stromberg.dnsalias.org/~strombrg/pybrowser/python-browser.html>
+
+### Common Errors & Fixes
+
+#### How to install with setup.py
+```bash
+python setup.py install
+```
 
 #### Python Encoding
 * Fix:
@@ -173,3 +229,26 @@ def to_bytestring (s, enc='utf-8'):
             return s.encode(enc)
 ```
 * Readings: <https://docs.python.org/2/howto/unicode.html>
+
+#### Django RuntimeError: maximum recursion depth exceeded
+
+* Problem:
+	when `python manage.py migrate`, a RuntimeError involving
+	```bash
+	File "/Users/XXXX/.pyenv/versions/2.7/lib/python2.7/functools.py", line 56, in <lambda>
+	``` 
+	happened.
+	
+* Fix: <http://stackoverflow.com/questions/15236556/django-runtimeerror-maximum-recursion-depth-exceeded>
+
+#### GIT LARGE FILE in Commits
+* Problem: 
+```bash
+remote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.
+remote: error: Trace: 505ee463747f5c5b151e80f30703acf0
+remote: error: See http://git.io/iEPt8g for more information.
+remote: error: File XXXXX.pdf is 118.71 MB; this exceeds GitHub's file size limit of 100.00 MB
+To https://github.com/scottjzou/XXXXXX.git
+```
+* Fix: this remove the file from commit. <http://stackoverflow.com/questions/21168846/cant-remove-file-from-git-commit>
+* Did not seem to work, ended up by removing the local git and re-init and then merge the branches. PUSH OFTEN and beware of the big files in git.

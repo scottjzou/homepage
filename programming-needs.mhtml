@@ -1,0 +1,500 @@
+From: <Saved by Blink>
+Subject: 
+Date: Tue, 11 Jan 2016 05:44:19 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----=_NextPart_000_066D_8C117DDE.A71EDD4B"
+
+------=_NextPart_000_066D_8C117DDE.A71EDD4B
+Content-Type: text/html
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///Users/Scott_Epic/git/scottjzou.github.io/programming-needs.md
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3Dwindows-1252"><link rel=3D"stylesheet" id=3D"theme" href=3D"chrome-exten=
+sion://febilkbfcbhebfnokafefeacimjdckgl/theme/Github.css"></head><body><h1 =
+id=3D"programming-needs-for-mac-users">Programming Needs for Mac Users</h1>
+<h2 id=3D"intro">Intro</h2>
+<p>This is a summary of tools you need to do programming on OSX, and also a=
+ summary of the skill sets and tutorials that I, Jiahang Scott Zou, have be=
+en learning or will be learning.</p>
+<p>This guide consists of basic installations and usages of those recommend=
+ed tools, as well as many resources and guides for some programming knowled=
+ges.</p>
+<p>This is only for educational purposes. The table of content is shown bel=
+ow, enjoy.</p>
+<h2 id=3D"table-of-contents">Table of Contents</h2>
+<!-- MarkdownTOC -->
+<ul>
+<li><a href=3D"file:///Users/Scott_Epic/git/scottjzou.github.io/programming=
+-needs.md#basic-tools">Basic Tools</a><ul>
+<li><a href=3D"file:///Users/Scott_Epic/git/scottjzou.github.io/programming=
+-needs.md#sublime-text">Sublime Text</a></li>
+<li><a href=3D"file:///Users/Scott_Epic/git/scottjzou.github.io/programming=
+-needs.md#bash">Bash</a></li>
+<li><a href=3D"file:///Users/Scott_Epic/git/scottjzou.github.io/programming=
+-needs.md#brew">Brew</a></li>
+<li><a href=3D"file:///Users/Scott_Epic/git/scottjzou.github.io/programming=
+-needs.md#git">Git</a></li>
+<li><a href=3D"file:///Users/Scott_Epic/git/scottjzou.github.io/programming=
+-needs.md#pyenv">Pyenv</a></li>
+<li><a href=3D"file:///Users/Scott_Epic/git/scottjzou.github.io/programming=
+-needs.md#anaconda">ANACONDA</a></li>
+<li><a href=3D"file:///Users/Scott_Epic/git/scottjzou.github.io/programming=
+-needs.md#markdown">Markdown</a></li>
+</ul>
+</li>
+<li><a href=3D"file:///Users/Scott_Epic/git/scottjzou.github.io/programming=
+-needs.md#web-development">Web Development</a><ul>
+<li><a href=3D"file:///Users/Scott_Epic/git/scottjzou.github.io/programming=
+-needs.md#django">Django</a></li>
+<li><a href=3D"file:///Users/Scott_Epic/git/scottjzou.github.io/programming=
+-needs.md#bootstrap">Bootstrap</a></li>
+<li><a href=3D"file:///Users/Scott_Epic/git/scottjzou.github.io/programming=
+-needs.md#font-awesome">Font Awesome</a></li>
+<li><a href=3D"file:///Users/Scott_Epic/git/scottjzou.github.io/programming=
+-needs.md#the-noun-project">The Noun Project</a></li>
+<li><a href=3D"file:///Users/Scott_Epic/git/scottjzou.github.io/programming=
+-needs.md#threejs">Three.js</a></li>
+<li><a href=3D"file:///Users/Scott_Epic/git/scottjzou.github.io/programming=
+-needs.md#ladon">Ladon</a></li>
+</ul>
+</li>
+<li><a href=3D"file:///Users/Scott_Epic/git/scottjzou.github.io/programming=
+-needs.md#other-installations">Other Installations</a><ul>
+<li><a href=3D"file:///Users/Scott_Epic/git/scottjzou.github.io/programming=
+-needs.md#jruby-and-mavenmvn">jruby and Maven(mvn)</a></li>
+<li><a href=3D"file:///Users/Scott_Epic/git/scottjzou.github.io/programming=
+-needs.md#sketch">Sketch</a></li>
+</ul>
+</li>
+<li><a href=3D"file:///Users/Scott_Epic/git/scottjzou.github.io/programming=
+-needs.md#specific-tools">Specific Tools</a><ul>
+<li><a href=3D"file:///Users/Scott_Epic/git/scottjzou.github.io/programming=
+-needs.md#thefuck">thefuck</a></li>
+<li><a href=3D"file:///Users/Scott_Epic/git/scottjzou.github.io/programming=
+-needs.md#python-tutor">Python Tutor</a></li>
+<li><a href=3D"file:///Users/Scott_Epic/git/scottjzou.github.io/programming=
+-needs.md#visualgo">visualgo</a></li>
+<li><a href=3D"file:///Users/Scott_Epic/git/scottjzou.github.io/programming=
+-needs.md#python-packaging">Python Packaging</a></li>
+<li><a href=3D"file:///Users/Scott_Epic/git/scottjzou.github.io/programming=
+-needs.md#online-python-ides">Online Python IDEs</a></li>
+</ul>
+</li>
+<li><a href=3D"file:///Users/Scott_Epic/git/scottjzou.github.io/programming=
+-needs.md#common-errors--fixes">Common Errors &amp; Fixes</a><ul>
+<li><a href=3D"file:///Users/Scott_Epic/git/scottjzou.github.io/programming=
+-needs.md#how-to-install-with-setuppy">How to install with setup.py</a></li=
+>
+<li><a href=3D"file:///Users/Scott_Epic/git/scottjzou.github.io/programming=
+-needs.md#python-encoding">Python Encoding</a></li>
+<li><a href=3D"file:///Users/Scott_Epic/git/scottjzou.github.io/programming=
+-needs.md#django-runtimeerror-maximum-recursion-depth-exceeded">Django Runt=
+imeError: maximum recursion depth exceeded</a></li>
+<li><a href=3D"file:///Users/Scott_Epic/git/scottjzou.github.io/programming=
+-needs.md#git-large-file-in-commits">GIT LARGE FILE in Commits</a></li>
+</ul>
+</li>
+</ul>
+<!-- /MarkdownTOC -->
+<h3 id=3D"basic-tools">Basic Tools</h3>
+<h4 id=3D"sublime-text">Sublime Text</h4>
+<ul>
+<li><a href=3D"http://www.sublimetext.com/3">Download</a></li>
+<li>Package Control: Paste this into console(<code>ctrl+` </code>)</li>
+</ul>
+<pre><code class=3D"lang-python3">import urllib.request,os,hashlib; h =3D '=
+2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf =
+=3D 'Package Control.sublime-package'; ipp =3D sublime.installed_packages_p=
+ath(); urllib.request.install_opener( urllib.request.build_opener( urllib.r=
+equest.Proxy<span class=3D"operator"><span class=3D"keyword">Handler</span>=
+()) );</span> by =3D urllib.request.urlopen( 'http://packagecontrol.io/' + =
+pf.<span class=3D"operator"><span class=3D"keyword">replace</span>(<span cl=
+ass=3D"string">' '</span>, <span class=3D"string">'%20'</span>)).<span clas=
+s=3D"keyword">read</span>();</span> dh =3D hashlib.sha256(by).hexdigest(); =
+print('Error validating down<span class=3D"operator"><span class=3D"keyword=
+">load</span> (got %s instead <span class=3D"keyword">of</span> %s), please=
+ try manual install<span class=3D"string">' % (dh, h)) if dh !=3D h else op=
+en(os.path.join( ipp, pf), '</span>wb<span class=3D"string">' ).write(by)
+</span></span></code></pre>
+<ul>
+<li>Add alias to enable <code>subl your_file</code></li>
+</ul>
+<h4 id=3D"bash">Bash</h4>
+<p>All should be put into <em>.bash_profile</em>  </p>
+<p>Use <code>vi ~/.bash_profile</code> to edit the file.</p>
+<ul>
+<li><p><a href=3D"http://www.cyberciti.biz/tips/howto-linux-unix-bash-shell=
+-setup-prompt.html">Editing bash shell prompt (PS1)</a>
+<code>export PS1=3D'\n[\u \W]'</code></p>
+</li>
+<li><p>Sublime Alias <code>alias subl=3D"/Applications/Sublime\ Text.app/Co=
+ntents/SharedSupport/bin/subl"</code></p>
+</li>
+</ul>
+<h4 id=3D"brew">Brew</h4>
+<ul>
+<li><p>Installation<br><code>ruby -e "$(curl -fsSL https://raw.githubuserco=
+ntent.com/Homebrew/install/masteall)"</code></p>
+</li>
+<li><p>Usage </p>
+<pre><code class=3D"lang-bash"><span class=3D"title">brew</span> install pa=
+ckage_name
+</code></pre>
+</li>
+<li>Update <code>brew update</code></li>
+</ul>
+<h4 id=3D"git">Git</h4>
+<p>Should be included in xcode command line tools.</p>
+<ul>
+<li><a href=3D"http://rogerdudler.github.io/git-guide/">Simple Guide</a></l=
+i>
+<li><a href=3D"https://www.atlassian.com/git/tutorials/">Medium Guide</a></=
+li>
+<li><a href=3D"http://stackoverflow.com/questions/315911/git-for-beginners-=
+the-definitive-practical-guide">Very Complete</a></li>
+</ul>
+<h4 id=3D"pyenv">Pyenv</h4>
+<p>The Python specific virtualenv, recommending using Anaconda</p>
+<ul>
+<li>Installation <pre><code><span class=3D"title">brew</span> install pyenv
+brew install pyenv-virtualenv
+brew install pyenv-pip-migrate
+</code></pre></li>
+<li>Put these in .bash_profile<pre><code class=3D"lang-bash">  <span class=
+=3D"title">eval</span> <span class=3D"string">"$(pyenv init -)"</span>
+  eval <span class=3D"string">"$(pyenv virtualenv-init -)"</span>
+</code></pre>
+</li>
+<li>Usage<pre><code>pyenv install <span class=3D"number">3.5</span><span cl=
+ass=3D"number">.0</span> (installing <span class=3D"keyword">this</span> py=
+thon version)
+pyenv virtualenv <span class=3D"number">3.5</span><span class=3D"number">.0=
+</span> your_environment (installing <span class=3D"keyword">this</span> <s=
+pan class=3D"keyword">virtual</span> environment <span class=3D"keyword">us=
+ing</span> <span class=3D"keyword">this</span> python version)
+pyenv local your_environment (<span class=3D"built_in">set</span> <span cla=
+ss=3D"keyword">this</span> folder to use <span class=3D"keyword">this</span=
+> virtualenv, so everytime enter <span class=3D"keyword">this</span> folder=
+ will begin run python in <span class=3D"keyword">this</span> environment)
+</code></pre></li>
+</ul>
+<h4 id=3D"anaconda">ANACONDA</h4>
+<ul>
+<li><a href=3D"https://www.continuum.io/downloads">Download</a> </li>
+<li><a href=3D"http://conda.pydata.org/docs/test-drive.html">Quick Start</a=
+></li>
+</ul>
+<h4 id=3D"markdown">Markdown</h4>
+<ul>
+<li><a href=3D"file:///Users/Scott_Epic/git/scottjzou.github.io/Markdown-Ch=
+eatsheet.md">Cheatsheet</a></li>
+<li><a href=3D"https://guides.github.com/features/mastering-markdown/">Gith=
+ub Guides</a></li>
+<li><a href=3D"http://www.emoji-cheat-sheet.com/">Emoji</a></li>
+<li>The editor <a href=3D"http://www.pc6.com/mac/114406.html">Mou</a></li>
+</ul>
+<h3 id=3D"web-development">Web Development</h3>
+<h4 id=3D"django">Django</h4>
+<ul>
+<li>Download (using pip)</li>
+<li><a href=3D"https://docs.djangoproject.com/en/1.9/">Documentation</a><h5=
+ id=3D"django-rest-framework">Django Rest Framework</h5>
+</li>
+<li><code>pip install django-rest-framework</code></li>
+<li><a href=3D"http://www.django-rest-framework.org/">http://www.django-res=
+t-framework.org/</a></li>
+<li>A Documentation tool that uses YAML to help: Django Rest Swagger
+<code>pip install django-rest-swagger</code></li>
+</ul>
+<h4 id=3D"bootstrap">Bootstrap</h4>
+<ul>
+<li><a href=3D"http://getbootstrap.com/getting-started/">Getting Started</a=
+></li>
+<li><a href=3D"http://getbootstrap.com/components/">Components</a></li>
+<li><a href=3D"http://http//getbootstrap.com/css/">CSS</a></li>
+<li><a href=3D"http://getbootstrap.com/javascript/">JS</a></li>
+</ul>
+<h4 id=3D"font-awesome">Font Awesome</h4>
+<ul>
+<li><a href=3D"http://fortawesome.github.io/Font-Awesome/get-started/">Gett=
+ing Started</a></li>
+<li><a href=3D"http://fortawesome.github.io/Font-Awesome/icons/">Icons</a><=
+/li>
+</ul>
+<h4 id=3D"the-noun-project">The Noun Project</h4>
+<ul>
+<li><a href=3D"https://thenounproject.com/">Icons</a></li>
+</ul>
+<h4 id=3D"three-js">Three.js</h4>
+<ul>
+<li><a href=3D"http://www.hewebgl.com/article/articledir/1">Guide(Chinese)<=
+/a></li>
+</ul>
+<h4 id=3D"ladon">Ladon</h4>
+<p>A web-service building tool with python/php</p>
+<ul>
+<li><a href=3D"http://pythonhosted.org/ladon/">http://pythonhosted.org/lado=
+n/</a></li>
+<li>also <a href=3D"https://github.com/TargetHolding/django-ladon">django-l=
+adon</a>.</li>
+</ul>
+<h3 id=3D"other-installations">Other Installations</h3>
+<h4 id=3D"jruby-and-maven-mvn-">jruby and Maven(mvn)</h4>
+<ul>
+<li><a href=3D"http://jruby.org/getting-started">Install</a></li>
+<li>Some notice:<ul>
+<li>brew provides version 9.0, while the newest package is 1.7.23 in my cas=
+e. So I had to download it with a zip file.</li>
+<li>To build the zip file, it requires <a href=3D"https://maven.apache.org/=
+">Maven</a>, which can be installed by Brew. Then build by typing <code>mvn=
+</code>.</li>
+</ul>
+</li>
+</ul>
+<h4 id=3D"sketch">Sketch</h4>
+<ul>
+<li><a href=3D"http://leveluptuts.com/tutorials/sketch-3-tutorials">Tutoria=
+ls</a></li>
+</ul>
+<h3 id=3D"specific-tools">Specific Tools</h3>
+<h4 id=3D"thefuck">thefuck</h4>
+<p>An auto-correcting tool</p>
+<p>Installation: </p>
+<pre><code><span class=3D"title">wget</span> -O - <span class=3D"url">https=
+://raw.githubusercontent.com/nvbn/thefuck/master/install.sh</span> | sh - &=
+amp;&amp; <span class=3D"variable">$0</span>
+</code></pre><h4 id=3D"python-tutor">Python Tutor</h4>
+<p>Environmental Diagram Yeah!=20
+<a href=3D"http://www.pythontutor.com/visualize.html#mode=3Dedit">http://ww=
+w.pythontutor.com/visualize.html#mode=3Dedit</a></p>
+<h4 id=3D"visualgo">visualgo</h4>
+<p>A <a href=3D"http://visualgo.net/">Site</a> that visualising data struct=
+ures and algorithms through animation</p>
+<h4 id=3D"python-packaging">Python Packaging</h4>
+<p>Guides:
+<a href=3D"https://python-packaging.readthedocs.org/en/latest/index.html">h=
+ttps://python-packaging.readthedocs.org/en/latest/index.html</a>  </p>
+<p><a href=3D"http://python-packaging-user-guide.readthedocs.org/en/latest/=
+distributing/">http://python-packaging-user-guide.readthedocs.org/en/latest=
+/distributing/</a></p>
+<h4 id=3D"online-python-ides">Online Python IDEs</h4>
+<p>comparisons: <a href=3D"http://stromberg.dnsalias.org/~strombrg/pybrowse=
+r/python-browser.html">http://stromberg.dnsalias.org/~strombrg/pybrowser/py=
+thon-browser.html</a></p>
+<h3 id=3D"common-errors-fixes">Common Errors &amp; Fixes</h3>
+<h4 id=3D"how-to-install-with-setup-py">How to install with setup.py</h4>
+<pre><code class=3D"lang-bash"><span class=3D"title">python</span> setup.py=
+ install
+</code></pre>
+<h4 id=3D"python-encoding">Python Encoding</h4>
+<ul>
+<li>Fix:<pre><code class=3D"lang-python"><span class=3D"attribute">your_str=
+.encode('utf-8')
+</span></code></pre>
+or<pre><code class=3D"lang-python"><span class=3D"function"><span class=3D"=
+keyword">def</span> <span class=3D"title">to_bytestring</span> <span class=
+=3D"params">(s, enc=3D<span class=3D"string">'utf-8'</span>)</span>:</span>
+  <span class=3D"string">"""Convert the given unicode string to a bytestrin=
+g, using the standard encoding,
+  unless it's already a bytestring"""</span>
+  <span class=3D"keyword">if</span> s:
+      <span class=3D"keyword">if</span> isinstance(s, str):
+          <span class=3D"keyword">return</span> s
+      <span class=3D"keyword">else</span>:
+          <span class=3D"keyword">return</span> s.encode(enc)
+</code></pre>
+</li>
+<li>Readings: <a href=3D"https://docs.python.org/2/howto/unicode.html">http=
+s://docs.python.org/2/howto/unicode.html</a></li>
+</ul>
+<h4 id=3D"django-runtimeerror-maximum-recursion-depth-exceeded">Django Runt=
+imeError: maximum recursion depth exceeded</h4>
+<ul>
+<li><p>Problem:
+  when <code>python manage.py migrate</code>, a RuntimeError involving</p>
+<pre><code class=3D"lang-bash">  File "/Users/XXXX/.pyenv/versions/2.7/lib/=
+python2.7/functools.py", line 56, in <span class=3D"tag">&lt;<span class=3D=
+"title">lambda</span>&gt;</span>
+</code></pre>
+<p>  happened.</p>
+</li>
+<li><p>Fix: <a href=3D"http://stackoverflow.com/questions/15236556/django-r=
+untimeerror-maximum-recursion-depth-exceeded">http://stackoverflow.com/ques=
+tions/15236556/django-runtimeerror-maximum-recursion-depth-exceeded</a></p>
+</li>
+</ul>
+<h4 id=3D"git-large-file-in-commits">GIT LARGE FILE in Commits</h4>
+<ul>
+<li>Problem: <pre><code class=3D"lang-bash">remote: error: GH001: Large fil=
+es detected. You may want <span class=3D"keyword">to</span> <span class=3D"=
+keyword">try</span> Git Large <span class=3D"keyword">File</span> Storage -=
+ https:<span class=3D"comment">//git-lfs.github.com.</span>
+remote: error: Trace: <span class=3D"number">505</span>ee463747f5c5b151e80f=
+30703acf0
+remote: error: See http:<span class=3D"comment">//git.io/iEPt8g for more in=
+formation.</span>
+remote: error: <span class=3D"keyword">File</span> XXXXX.pdf is <span class=
+=3D"number">118.71</span> MB; this exceeds GitHub<span class=3D"string">'s =
+file size limit of 100.00 MB
+To https://github.com/scottjzou/XXXXXX.git
+</span></code></pre>
+</li>
+<li>Fix: this remove the file from commit. <a href=3D"http://stackoverflow.=
+com/questions/21168846/cant-remove-file-from-git-commit">http://stackoverfl=
+ow.com/questions/21168846/cant-remove-file-from-git-commit</a></li>
+<li>Did not seem to work, ended up by removing the local git and re-init an=
+d then merge the branches. PUSH OFTEN and beware of the big files in git.</=
+li>
+</ul>
+</body></html>
+------=_NextPart_000_066D_8C117DDE.A71EDD4B
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: chrome-extension://febilkbfcbhebfnokafefeacimjdckgl/theme/Github.css
+
+* { margin: 0px; padding: 0px; }
+
+body { font-style: normal; font-variant: normal; font-weight: normal; font-=
+stretch: normal; font-size: 13.34px; font-family: helvetica, arial, freesan=
+s, clean, sans-serif; color: black; line-height: 1.4em; padding: 0.7em; bac=
+kground-color: rgb(248, 248, 248); }
+
+p { margin: 1em 0px; line-height: 1.5em; }
+
+table { font-size: inherit; margin: 1em; }
+
+table th { border-bottom-width: 1px; border-bottom-style: solid; border-bot=
+tom-color: rgb(187, 187, 187); padding: 0.2em 1em; }
+
+table td { border-bottom-width: 1px; border-bottom-style: solid; border-bot=
+tom-color: rgb(221, 221, 221); padding: 0.2em 1em; }
+
+input[type=3D"text"], input[type=3D"password"], input[type=3D"image"], text=
+area { font-style: normal; font-variant: normal; font-weight: normal; font-=
+stretch: normal; font-size: 99%; line-height: normal; font-family: helvetic=
+a, arial, freesans, sans-serif; }
+
+select, option { padding: 0px 0.25em; }
+
+optgroup { margin-top: 0.5em; }
+
+pre, code { font-style: normal; font-variant: normal; font-weight: normal; =
+font-stretch: normal; font-size: 12px; line-height: normal; font-family: Mo=
+naco, 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monosp=
+ace; }
+
+pre { margin: 1em 0px; font-size: 12px; border: 1px solid rgb(221, 221, 221=
+); padding: 5px; line-height: 1.5em; color: rgb(68, 68, 68); overflow: auto=
+; box-shadow: rgba(0, 0, 0, 0.0666667) 0px 1px 2px inset; border-radius: 3p=
+x; background-color: rgb(238, 238, 238); }
+
+pre code { padding: 0px; font-size: 12px; border: none; background-color: r=
+gb(238, 238, 238); }
+
+code { font-size: 12px; color: rgb(68, 68, 68); padding: 0px 0.2em; border:=
+ 1px solid rgb(222, 222, 222); background-color: rgb(248, 248, 255); }
+
+img { border: 0px; max-width: 100%; }
+
+abbr { border-bottom-style: none; }
+
+a { color: rgb(65, 131, 196); text-decoration: none; }
+
+a:hover { text-decoration: underline; }
+
+a code, a:link code, a:visited code { color: rgb(65, 131, 196); }
+
+h2, h3 { margin: 1em 0px; }
+
+h1, h2, h3, h4, h5, h6 { border: 0px; }
+
+h1 { font-size: 170%; border-top-width: 4px; border-top-style: solid; borde=
+r-top-color: rgb(170, 170, 170); padding-top: 0.5em; margin-top: 1.5em; }
+
+h1:first-child { margin-top: 0px; padding-top: 0.25em; border-top-style: no=
+ne; }
+
+h2 { font-size: 150%; margin-top: 1.5em; border-bottom-width: 1px; border-b=
+ottom-style: solid; border-bottom-color: rgb(221, 221, 221); padding-bottom=
+: 0.5em; }
+
+h3 { margin-top: 1em; }
+
+hr { height: 0px; margin: 15px 0px; overflow: hidden; border-width: 0px 0px=
+ 4px; border-bottom-style: solid; border-bottom-color: rgb(221, 221, 221); =
+background: transparent; }
+
+ul { margin: 1em 0px 1em 2em; }
+
+ol { margin: 1em 0px 1em 2em; }
+
+ul li, ol li { margin-top: 0.5em; margin-bottom: 0.5em; }
+
+ul ul, ul ol, ol ol, ol ul { margin-top: 0px; margin-bottom: 0px; }
+
+blockquote { margin: 1em 0px; border-left-width: 5px; border-left-style: so=
+lid; border-left-color: rgb(221, 221, 221); padding-left: 0.6em; color: rgb=
+(85, 85, 85); }
+
+dt { font-weight: bold; margin-left: 1em; }
+
+dd { margin-left: 2em; margin-bottom: 1em; }
+
+@media screen and (min-width: 768px) {=20
+  body { width: 748px; margin: 10px auto; }
+}
+
+pre code { display: block; padding: 0.5em; color: rgb(51, 51, 51); backgrou=
+nd: rgb(248, 248, 255); }
+
+pre .comment, pre .template_comment, pre .diff .header, pre .javadoc { colo=
+r: rgb(153, 153, 136); font-style: italic; }
+
+pre .keyword, pre .css .rule .keyword, pre .winutils, pre .javascript .titl=
+e, pre .nginx .title, pre .subst, pre .request, pre .status { color: rgb(51=
+, 51, 51); font-weight: bold; }
+
+pre .number, pre .hexcolor, pre .ruby .constant { color: rgb(0, 153, 153); =
+}
+
+pre .string, pre .tag .value, pre .phpdoc, pre .tex .formula { color: rgb(2=
+21, 17, 68); }
+
+pre .title, pre .id, pre .coffeescript .params, pre .scss .preprocessor { c=
+olor: rgb(153, 0, 0); font-weight: bold; }
+
+pre .javascript .title, pre .lisp .title, pre .clojure .title, pre .subst {=
+ font-weight: normal; }
+
+pre .class .title, pre .haskell .type, pre .vhdl .literal, pre .tex .comman=
+d { color: rgb(68, 85, 136); font-weight: bold; }
+
+pre .tag, pre .tag .title, pre .rules .property, pre .django .tag .keyword =
+{ color: rgb(0, 0, 128); font-weight: normal; }
+
+pre .attribute, pre .variable, pre .lisp .body { color: rgb(0, 128, 128); }
+
+pre .regexp { color: rgb(0, 153, 38); }
+
+pre .class { color: rgb(68, 85, 136); font-weight: bold; }
+
+pre .symbol, pre .ruby .symbol .string, pre .lisp .keyword, pre .tex .speci=
+al, pre .prompt { color: rgb(153, 0, 115); }
+
+pre .built_in, pre .lisp .title, pre .clojure .built_in { color: rgb(0, 134=
+, 179); }
+
+pre .preprocessor, pre .pi, pre .doctype, pre .shebang, pre .cdata { color:=
+ rgb(153, 153, 153); font-weight: bold; }
+
+pre .deletion { background: rgb(255, 221, 221); }
+
+pre .addition { background: rgb(221, 255, 221); }
+
+pre .diff .change { background: rgb(0, 134, 179); }
+
+pre .chunk { color: rgb(170, 170, 170); }
+------=_NextPart_000_066D_8C117DDE.A71EDD4B--
